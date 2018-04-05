@@ -1,3 +1,19 @@
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+#backgroundImage {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("images/Chinese-background.jpg");
+	height: 685px;
+	width: auto;
+}
+
 h1 {
-	color: red;
+	color: #FFF35B;
+	text-align: center;
+	
 }
