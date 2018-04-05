@@ -45,8 +45,14 @@ h1 {
 
 .yinYang {
 	position: absolute;
-	width: 75px;
-	height: 75px;
+	width: 85px;
+	height: 85px;
+}
+
+.asianPic {
+	position: absolute;
+	width: 85px;
+	height: 85px;
 }
 
 #column1Card1 {
@@ -165,5 +171,125 @@ h1 {
 
 #column6Card4 {
 	margin-left: 70%;
+	margin-top: 30%;
+}
+
+#row1Card1 {
+	margin-left: 20%;
+	margin-top: 3%;
+}
+
+#row1Card2 {
+	margin-left: 30%;
+	margin-top: 3%;
+}
+
+#row1Card3 {
+	margin-left: 40%;
+	margin-top: 3%;
+}
+
+#row1Card4 {
+	margin-left: 50%;
+	margin-top: 3%;
+}
+
+#row1Card5 {
+	margin-left: 60%;
+	margin-top: 3%;
+}
+
+#row1Card6 {
+	margin-left: 60%;
+	margin-top: 3%;
+}
+
+#row2Card1 {
+	margin-left: 20%;
+	margin-top: 12%;
+}
+
+#row2Card2 {
+	margin-left: 30%;
+	margin-top: 12%;
+}
+
+#row2Card3 {
+	margin-left: 40%;
+	margin-top: 12%;
+}
+
+#row2Card4 {
+	margin-left: 50%;
+	margin-top: 12%;
+}
+
+#row2Card5 {
+	margin-left: 60%;
+	margin-top: 12%;
+}
+
+#row2Card6 {
+	margin-left: 60%;
+	margin-top: 12%;
+}
+
+#row3Card1 {
+	margin-left: 20%;
+	margin-top: 21%;
+}
+
+#row3Card2 {
+	margin-left: 30%;
+	margin-top: 21%;
+}
+
+#row3Card3 {
+	margin-left: 40%;
+	margin-top: 21%;
+}
+
+#row3Card4 {
+	margin-left: 50%;
+	margin-top: 21%;
+}
+
+#row3Card5 {
+	margin-left: 60%;
+	margin-top: 21%;
+}
+
+#row3Card6 {
+	margin-left: 60%;
+	margin-top: 21%;
+}
+
+#row4Card1 {
+	margin-left: 20%;
+	margin-top: 30%;
+}
+
+#row4Card2 {
+	margin-left: 30%;
+	margin-top: 30%;
+}
+
+#row4Card3 {
+	margin-left: 40%;
+	margin-top: 30%;
+}
+
+#row4Card4 {
+	margin-left: 50%;
+	margin-top: 30%;
+}
+
+#row4Card5 {
+	margin-left: 60%;
+	margin-top: 30%;
+}
+
+#row4Card6 {
+	margin-left: 60%;
 	margin-top: 30%;
 }
