@@ -3,16 +3,16 @@ li {
 	display: inline-block;
 }
 
-#table-background {
+.table-background {
 	display: block;
 	margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   height: 450px;
   margin-top: 40px;
 }
 
-#backgroundImage {
+.backgroundImage {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url("images/Other-background.jpeg");
@@ -20,31 +20,15 @@ li {
 	width: 100%;
 }
 
-/*.navbar {
-	width: 30%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'Ceviche One', cursive;
-	font-size: 25px;
-	padding: 5px;
-}*/
-
 .btn-warning {
 	background-color: #FFF35B;
 }
 
-#buttons {
+#gameBtn {
 	display: inline-block;
-	margin-left: 42.5%
+	margin-left: 42.5%;
 }
 
-#gameBtn {
-	margin: 10px
-}
-#instructionsBtn {
-	margin: 10px
-}
 
 h1 {
 	color: #FFF35B;
@@ -53,4 +37,63 @@ h1 {
 	font-size: 90px;
 	margin-top: 20px;
 
+}
+
+.container {
+	position: relative;
+	border: 5px solid black;
+}
+
+.yinYang {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+}
+
+#column1Card1 {
+
+	margin-left: 20%;
+	margin-top: 7%;
+}
+
+#column1Card2 {
+
+	margin-left: 20%;
+	margin-top: 16%;
+}
+
+#column1Card3 {
+	
+	margin-left: 20%;
+	margin-top: 25%;
+}
+
+#column1Card4 {
+
+	margin-left: 20%;
+	margin-top: 34%;
+}
+
+#column2Card1 {
+
+	margin-left: 30%;
+	margin-top: 7%;
+}
+
+#column2Card2 {
+
+	margin-left: 30%;
+	margin-top: 16%;
+}
+
+#column2Card3 {
+
+	margin-left: 30%;
+	margin-top: 25%;
+}
+
+#column2Card4 {
+
+	margin-left: 30%;
+	margin-top: 34%;
 }
