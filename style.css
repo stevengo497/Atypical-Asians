@@ -41,7 +41,6 @@ h1 {
 
 .container {
 	position: relative;
-	border: 5px solid black;
 }
 
 .yinYang {
@@ -52,119 +51,119 @@ h1 {
 
 #column1Card1 {
 	margin-left: 20%;
-	margin-top: 7%;
+	margin-top: 3%;
 }
 
 #column1Card2 {
 	margin-left: 20%;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 #column1Card3 {
 	margin-left: 20%;
-	margin-top: 25%;
+	margin-top: 21%;
 }
 
 #column1Card4 {
 	margin-left: 20%;
-	margin-top: 34%;
+	margin-top: 30%;
 }
 
 #column2Card1 {
 	margin-left: 30%;
-	margin-top: 7%;
+	margin-top: 3%;
 }
 
 #column2Card2 {
 	margin-left: 30%;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 #column2Card3 {
 	margin-left: 30%;
-	margin-top: 25%;
+	margin-top: 21%;
 }
 
 #column2Card4 {
 	margin-left: 30%;
-	margin-top: 34%;
+	margin-top: 30%;
 }
 
 #column3Card1 {
 	margin-left: 40%;
-	margin-top: 7%;
+	margin-top: 3%;
 }
 
 #column3Card2 {
 	margin-left: 40%;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 #column3Card3 {
 	margin-left: 40%;
-	margin-top: 25%;
+	margin-top: 21%;
 }
 
 #column3Card4 {
 	margin-left: 40%;
-	margin-top: 34%;
+	margin-top: 30%;
 }
 
 #column4Card1 {
 	margin-left: 50%;
-	margin-top: 7%;
+	margin-top: 3%;
 }
 
 #column4Card2 {
 	margin-left: 50%;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 #column4Card3 {
 	margin-left: 50%;
-	margin-top: 25%;
+	margin-top: 21%;
 }
 
 #column4Card4 {
 	margin-left: 50%;
-	margin-top: 34%;
+	margin-top: 30%;
 }
 
 #column5Card1 {
 	margin-left: 60%;
-	margin-top: 7%;
+	margin-top: 3%;
 }
 
 #column5Card2 {
 	margin-left: 60%;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 #column5Card3 {
 	margin-left: 60%;
-	margin-top: 25%;
+	margin-top: 21%;
 }
 
 #column5Card4 {
 	margin-left: 60%;
-	margin-top: 34%;
+	margin-top: 30%;
 }
 #column6Card1 {
 	margin-left: 70%;
-	margin-top: 7%;
+	margin-top: 3%;
 }
 
 #column6Card2 {
 	margin-left: 70%;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 #column6Card3 {
 	margin-left: 70%;
-	margin-top: 25%;
+	margin-top: 21%;
 }
 
 #column6Card4 {
 	margin-left: 70%;
-	margin-top: 34%;
+	margin-top: 30%;
 }
