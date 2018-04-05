@@ -3,17 +3,26 @@ li {
 	display: inline-block;
 }
 
+#table-background {
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 #backgroundImage {
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("images/Chinese-background.jpg");
+	background-image: url("images/Other-background.jpeg");
 	height: 685px;
-	width: auto;
+	width: 100%;
 }
 
 h1 {
 	color: #FFF35B;
 	text-align: center;
-	
+	font-family: 'Ceviche One', cursive;
+	font-size: 90px;
+	margin: 20px;
+
 }
