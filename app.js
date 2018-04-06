@@ -9,7 +9,6 @@ $(document).ready(function() {
 			$('#row1Card5').fadeIn("fast");
 	
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-					// console.log('Hey');
 					$('#row1Card5').fadeOut(1500);
 					$('#column5Card1').fadeOut(100);
 					$('#row3Card2').fadeOut(1500);
@@ -23,7 +22,6 @@ $(document).ready(function() {
 
 
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-					// console.log('Hey');	
 					$('#row3Card2').fadeOut(1500);
 					$('#column2Card3').fadeOut(100);
 					$('#row1Card5').fadeOut(1500);
@@ -38,7 +36,6 @@ $(document).ready(function() {
 			$('#row1Card4').fadeIn("fast");
 	
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
-					// console.log('Hey');
 					$('#row1Card4').fadeOut(1500);
 					$('#column4Card1').fadeOut(100);
 					$('#row1Card6').fadeOut(1500);
@@ -52,7 +49,6 @@ $(document).ready(function() {
 
 
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
-					// console.log('Hey');	
 					$('#row1Card6').fadeOut(1500);
 					$('#column6Card1').fadeOut(100);
 					$('#row1Card4').fadeOut(1500);
@@ -60,9 +56,57 @@ $(document).ready(function() {
 			}	
 	});
 
+// Daniel Wu//
+	$('#column1Card1').on("click", function() {	
+			$('#row1Card1').css({'display' : 'block'});
+			$('#row1Card1').fadeIn("fast");
+	
+			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
+					$('#row1Card1').fadeOut(1500);
+					$('#column1Card1').fadeOut(100);
+					$('#row4Card1').fadeOut(1500);
+					$('#column1Card4').fadeOut(100);
+			}															
+	});
+
+	$('#column1Card4').on("click", function() {
+  		$('#row4Card1').css({'display' : 'block'});
+			$('#row4Card1').fadeIn("fast");
 
 
+			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
+					$('#row4Card1').fadeOut(1500);
+					$('#column1Card4').fadeOut(100);
+					$('#row1Card1').fadeOut(1500);
+					$('#column1Card1').fadeOut(100);			
+			}	
+	});
 
+// Donnie Yen//
+	$('#column2Card1').on("click", function() {	
+			$('#row1Card2').css({'display' : 'block'});
+			$('#row1Card2').fadeIn("fast");
+	
+			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
+					$('#row1Card2').fadeOut(1500);
+					$('#column2Card1').fadeOut(100);
+					$('#row3Card4').fadeOut(1500);
+					$('#column1Card4').fadeOut(100);
+			}															
+	});
+
+	$('#column4Card3').on("click", function() {
+  		$('#row3Card4').css({'display' : 'block'});
+			$('#row3Card4').fadeIn("fast");
+
+
+			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
+					$('#row3Card4').fadeOut(1500);
+					$('#column4Card3').fadeOut(100);
+					$('#row1Card2').fadeOut(1500);
+					$('#column2Card1').fadeOut(100);			
+			}	
+	});
 
 
 
