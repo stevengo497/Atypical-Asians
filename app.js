@@ -188,6 +188,137 @@ $(document).ready(function() {
 	});
 
 
+//Bruce Lee
+	$('#column3Card2').on("click", function() {	
+			$('#row2Card3').css({'display' : 'block'});
+			$('#row2Card3').fadeIn("fast");
+	
+			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
+					$('#row2Card3').fadeOut(1500);
+					$('#column3Card2').fadeOut(100);
+					$('#row3Card5').fadeOut(1500);
+					$('#column5Card3').fadeOut(100);
+			}															
+	});
+
+	$('#column5Card3').on("click", function() {
+  		$('#row3Card5').css({'display' : 'block'});
+			$('#row3Card5').fadeIn("fast");
+
+
+			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
+					$('#row3Card5').fadeOut(1500);
+					$('#column5Card3').fadeOut(100);
+					$('#row2Card3').fadeOut(1500);
+					$('#column3Card2').fadeOut(100);			
+			}	
+	});
+
+	//Sung Kang
+	$('#column4Card2').on("click", function() {	
+			$('#row2Card4').css({'display' : 'block'});
+			$('#row2Card4').fadeIn("fast");
+	
+			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
+					$('#row2Card4').fadeOut(1500);
+					$('#column4Card2').fadeOut(100);
+					$('#row3Card6').fadeOut(1500);
+					$('#column6Card3').fadeOut(100);
+			}															
+	});
+
+	$('#column6Card3').on("click", function() {
+  		$('#row3Card6').css({'display' : 'block'});
+			$('#row3Card6').fadeIn("fast");
+
+
+			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
+					$('#row3Card6').fadeOut(1500);
+					$('#column6Card3').fadeOut(100);
+					$('#row2Card4').fadeOut(1500);
+					$('#column4Card2').fadeOut(100);			
+			}	
+	});
+
+	//John Cho
+	$('#column5Card2').on("click", function() {	
+			$('#row2Card5').css({'display' : 'block'});
+			$('#row2Card5').fadeIn("fast");
+	
+			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
+					$('#row2Card5').fadeOut(1500);
+					$('#column5Card2').fadeOut(100);
+					$('#row4Card5').fadeOut(1500);
+					$('#column5Card4').fadeOut(100);
+			}															
+	});
+
+	$('#column5Card4').on("click", function() {
+  		$('#row4Card5').css({'display' : 'block'});
+			$('#row4Card5').fadeIn("fast");
+
+
+			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
+					$('#row4Card5').fadeOut(1500);
+					$('#column5Card4').fadeOut(100);
+					$('#row2Card5').fadeOut(1500);
+					$('#column5Card2').fadeOut(100);			
+			}	
+	});
+
+	//Ken Jeong
+	$('#column2Card4').on("click", function() {	
+			$('#row4Card2').css({'display' : 'block'});
+			$('#row4Card2').fadeIn("fast");
+	
+			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
+					$('#row4Card2').fadeOut(1500);
+					$('#column2Card4').fadeOut(100);
+					$('#row4Card6').fadeOut(1500);
+					$('#column6Card4').fadeOut(100);
+			}															
+	});
+
+	$('#column6Card4').on("click", function() {
+  		$('#row4Card6').css({'display' : 'block'});
+			$('#row4Card6').fadeIn("fast");
+
+
+			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
+					$('#row4Card6').fadeOut(1500);
+					$('#column6Card4').fadeOut(100);
+					$('#row4Card2').fadeOut(1500);
+					$('#column2Card4').fadeOut(100);			
+			}	
+	});
+
+	//Daniel Dae Kim
+	$('#column1Card3').on("click", function() {	
+			$('#row3Card1').css({'display' : 'block'});
+			$('#row3Card1').fadeIn("fast");
+	
+			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
+					$('#row3Card1').fadeOut(1500);
+					$('#column1Card3').fadeOut(100);
+					$('#row4Card3').fadeOut(1500);
+					$('#column3Card4').fadeOut(100);
+			}															
+	});
+
+	$('#column3Card4').on("click", function() {
+  		$('#row4Card3').css({'display' : 'block'});
+			$('#row4Card3').fadeIn("fast");
+
+
+			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
+					$('#row4Card3').fadeOut(1500);
+					$('#column3Card4').fadeOut(100);
+					$('#row3Card1').fadeOut(1500);
+					$('#column1Card3').fadeOut(100);			
+			}	
+	});
+
+
 });
 
 
