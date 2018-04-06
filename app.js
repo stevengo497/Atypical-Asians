@@ -91,7 +91,7 @@ $(document).ready(function() {
 					$('#row1Card2').fadeOut(1500);
 					$('#column2Card1').fadeOut(100);
 					$('#row3Card4').fadeOut(1500);
-					$('#column1Card4').fadeOut(100);
+					$('#column4Card3').fadeOut(100);
 			}															
 	});
 
@@ -109,6 +109,31 @@ $(document).ready(function() {
 	});
 
 
+//Tony Jaa
+	$('#column3Card1').on("click", function() {	
+			$('#row1Card3').css({'display' : 'block'});
+			$('#row1Card3').fadeIn("fast");
+	
+			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
+					$('#row1Card3').fadeOut(1500);
+					$('#column3Card1').fadeOut(100);
+					$('#row2Card6').fadeOut(1500);
+					$('#column6Card2').fadeOut(100);
+			}															
+	});
+
+	$('#column6Card2').on("click", function() {
+  		$('#row2Card6').css({'display' : 'block'});
+			$('#row2Card6').fadeIn("fast");
+
+
+			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
+					$('#row2Card6').fadeOut(1500);
+					$('#column6Card2').fadeOut(100);
+					$('#row1Card3').fadeOut(1500);
+					$('#column3Card1').fadeOut(100);			
+			}	
+	});
 
 
 
