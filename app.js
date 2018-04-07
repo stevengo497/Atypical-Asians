@@ -13,17 +13,23 @@ $(document).ready(function() {
 			$('#row1Card5').css({'display' : 'block'});
 			$('#row1Card5').fadeIn("fast");
 			$('#row1Card5').addClass("clicked");
-	
-			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-					$('#row1Card5').fadeOut(1500);
-					$('#column5Card1').fadeOut(100);
-					$('#row3Card2').fadeOut(1500);
-					$('#column2Card3').fadeOut(100);
-			}
-			if ($('.clicked').length === 2) {
-				console.log('clicked!')
-			}	
-
+				let checkMatch1 = function () {
+						if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
+							$('#row1Card5').fadeOut(1500);
+							$('#column5Card1').fadeOut(100);
+							$('#row3Card2').fadeOut(1500);
+							$('#column2Card3').fadeOut(100);
+				}
+						}
+				if ($('.clicked').length > 1) {
+				console.log('clicked!');
+				checkMatch1();
+				}
+					
+				if ($('.clicked').length > 1) {
+					$('.clicked').fadeOut(1500);
+					
+				}
 	});
 
 	$('#column2Card3').on("click", function() {
@@ -31,16 +37,22 @@ $(document).ready(function() {
 			$('#row3Card2').fadeIn("fast");
 			$('#row3Card2').addClass("clicked");
 
-
+	let checkMatch2 = function () {
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
 					$('#row3Card2').fadeOut(1500);
 					$('#column2Card3').fadeOut(100);
 					$('#row1Card5').fadeOut(1500);
 					$('#column5Card1').fadeOut(100);			
-			}	
-			if ($('.clicked').length === 2) {
-				console.log('clicked!')
-			}	
+			}
+	}			
+				if ($('.clicked').length > 1) {
+				console.log('clicked!');
+				checkMatch2();
+				}	
+
+				if ($('.clicked').length > 1) {
+					$('.clicked').fadeOut(1500);
+				}
 	});
 
 
@@ -49,32 +61,44 @@ $(document).ready(function() {
 			$('#row1Card4').css({'display' : 'block'});
 			$('#row1Card4').fadeIn("fast");
 			$('#row1Card4').addClass("clicked");
-	
+	let checkMatch3 = function () {
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
 					$('#row1Card4').fadeOut(1500);
 					$('#column4Card1').fadeOut(100);
 					$('#row1Card6').fadeOut(1500);
 					$('#column6Card1').fadeOut(100);
+	}		
 			}		
-			if ($('.clicked').length === 2) {
-				console.log('clicked!')
-			}													
+				if ($('.clicked').length > 1) {
+				console.log('clicked!');
+				checkMatch3();
+				}	
+
+				if ($('.clicked').length > 1) {
+					$('.clicked').fadeOut(1500);
+				}
 	});
 
 	$('#column6Card1').on("click", function() {
   		$('#row1Card6').css({'display' : 'block'});
 			$('#row1Card6').fadeIn("fast");
 			$('#row1Card6').addClass("clicked");
-
+	let checkMatch4 = function () {		
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
 					$('#row1Card6').fadeOut(1500);
 					$('#column6Card1').fadeOut(100);
 					$('#row1Card4').fadeOut(1500);
 					$('#column4Card1').fadeOut(100);			
+	}		
 			}	
-			if ($('.clicked').length === 2) {
-				console.log('clicked!')
-			}	
+				if ($('.clicked').length > 1) {
+				console.log('clicked!');
+				checkMatch4();
+				}
+
+				if ($('.clicked').length > 1) {
+					$('.clicked').fadeOut(1500);
+				}
 	});
 
 
