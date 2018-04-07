@@ -13,22 +13,23 @@ $(document).ready(function() {
 			$('#row1Card5').css({'display' : 'block'});
 			$('#row1Card5').fadeIn("fast");
 			$('#row1Card5').addClass("clicked");
-				let checkMatch1 = function () {
+				let checkChan1 = function () {
 						if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-							$('#row1Card5').fadeOut(1500);
-							$('#column5Card1').fadeOut(100);
-							$('#row3Card2').fadeOut(1500);
-							$('#column2Card3').fadeOut(100);
+							$('#row1Card5').delay(1000).fadeOut(1500);
+							$('#column5Card1').delay(1000).fadeOut(100);
+							$('#row3Card2').delay(1000).fadeOut(1500);
+							$('#column2Card3').delay(1000).fadeOut(100);
 				}
 						}
 				if ($('.clicked').length > 1) {
 				console.log('clicked!');
-				checkMatch1();
+				checkChan1();
 				}
 					
 				if ($('.clicked').length > 1) {
-					$('.clicked').fadeOut(1500);
-					
+					$('.clicked').delay(1000).fadeOut(2000).removeClass("clicked");
+
+
 				}
 	});
 
@@ -37,21 +38,21 @@ $(document).ready(function() {
 			$('#row3Card2').fadeIn("fast");
 			$('#row3Card2').addClass("clicked");
 
-	let checkMatch2 = function () {
+	let checkChan2 = function () {
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-					$('#row3Card2').fadeOut(1500);
-					$('#column2Card3').fadeOut(100);
-					$('#row1Card5').fadeOut(1500);
-					$('#column5Card1').fadeOut(100);			
+					$('#row3Card2').delay(1000).fadeOut(1500);
+					$('#column2Card3').delay(1000).fadeOut(100);
+					$('#row1Card5').delay(1000).fadeOut(1500);
+					$('#column5Card1').delay(1000).fadeOut(100);			
 			}
 	}			
 				if ($('.clicked').length > 1) {
 				console.log('clicked!');
-				checkMatch2();
+				checkChan2();
 				}	
 
 				if ($('.clicked').length > 1) {
-					$('.clicked').fadeOut(1500);
+					$('.clicked').delay(1000).fadeOut(2000).removeClass("clicked");
 				}
 	});
 
@@ -61,21 +62,21 @@ $(document).ready(function() {
 			$('#row1Card4').css({'display' : 'block'});
 			$('#row1Card4').fadeIn("fast");
 			$('#row1Card4').addClass("clicked");
-	let checkMatch3 = function () {
+	let checkLi1 = function () {
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
-					$('#row1Card4').fadeOut(1500);
-					$('#column4Card1').fadeOut(100);
-					$('#row1Card6').fadeOut(1500);
-					$('#column6Card1').fadeOut(100);
+					$('#row1Card4').delay(1000).fadeOut(1500);
+					$('#column4Card1').delay(1000).fadeOut(100);
+					$('#row1Card6').delay(1000).fadeOut(1500);
+					$('#column6Card1').delay(1000).fadeOut(100);
 	}		
 			}		
 				if ($('.clicked').length > 1) {
 				console.log('clicked!');
-				checkMatch3();
+				checkLi1();
 				}	
 
 				if ($('.clicked').length > 1) {
-					$('.clicked').fadeOut(1500);
+					$('.clicked').delay(1000).fadeOut(2000).removeClass("clicked");
 				}
 	});
 
@@ -83,21 +84,21 @@ $(document).ready(function() {
   		$('#row1Card6').css({'display' : 'block'});
 			$('#row1Card6').fadeIn("fast");
 			$('#row1Card6').addClass("clicked");
-	let checkMatch4 = function () {		
+	let checkLi2 = function () {		
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
-					$('#row1Card6').fadeOut(1500);
-					$('#column6Card1').fadeOut(100);
-					$('#row1Card4').fadeOut(1500);
-					$('#column4Card1').fadeOut(100);			
+					$('#row1Card6').delay(1000).fadeOut(1500);
+					$('#column6Card1').delay(1000).fadeOut(100);
+					$('#row1Card4').delay(1000).fadeOut(1500);
+					$('#column4Card1').delay(1000).fadeOut(100);			
 	}		
 			}	
 				if ($('.clicked').length > 1) {
 				console.log('clicked!');
-				checkMatch4();
+				checkLi2();
 				}
 
 				if ($('.clicked').length > 1) {
-					$('.clicked').fadeOut(1500);
+					$('.clicked').delay(1000).fadeOut(2000).removeClass("clicked");
 				}
 	});
 
@@ -108,10 +109,10 @@ $(document).ready(function() {
 			$('#row1Card1').fadeIn("fast");
 	
 			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
-					$('#row1Card1').fadeOut(1500);
-					$('#column1Card1').fadeOut(100);
-					$('#row4Card1').fadeOut(1500);
-					$('#column1Card4').fadeOut(100);
+					$('#row1Card1').delay(1000).fadeOut(1500);
+					$('#column1Card1').delay(1000).fadeOut(100);
+					$('#row4Card1').delay(1000).fadeOut(1500);
+					$('#column1Card4').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -121,10 +122,10 @@ $(document).ready(function() {
 
 
 			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
-					$('#row4Card1').fadeOut(1500);
-					$('#column1Card4').fadeOut(100);
-					$('#row1Card1').fadeOut(1500);
-					$('#column1Card1').fadeOut(100);			
+					$('#row4Card1').delay(1000).fadeOut(1500);
+					$('#column1Card4').delay(1000).fadeOut(100);
+					$('#row1Card1').delay(1000).fadeOut(1500);
+					$('#column1Card1').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -134,10 +135,10 @@ $(document).ready(function() {
 			$('#row1Card2').fadeIn("fast");
 	
 			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
-					$('#row1Card2').fadeOut(1500);
-					$('#column2Card1').fadeOut(100);
-					$('#row3Card4').fadeOut(1500);
-					$('#column4Card3').fadeOut(100);
+					$('#row1Card2').delay(1000).fadeOut(1500);
+					$('#column2Card1').delay(1000).fadeOut(100);
+					$('#row3Card4').delay(1000).fadeOut(1500);
+					$('#column4Card3').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -147,10 +148,10 @@ $(document).ready(function() {
 
 
 			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
-					$('#row3Card4').fadeOut(1500);
-					$('#column4Card3').fadeOut(100);
-					$('#row1Card2').fadeOut(1500);
-					$('#column2Card1').fadeOut(100);			
+					$('#row3Card4').delay(1000).fadeOut(1500);
+					$('#column4Card3').delay(1000).fadeOut(100);
+					$('#row1Card2').delay(1000).fadeOut(1500);
+					$('#column2Card1').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -161,10 +162,10 @@ $(document).ready(function() {
 			$('#row1Card3').fadeIn("fast");
 	
 			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
-					$('#row1Card3').fadeOut(1500);
-					$('#column3Card1').fadeOut(100);
-					$('#row2Card6').fadeOut(1500);
-					$('#column6Card2').fadeOut(100);
+					$('#row1Card3').delay(1000).fadeOut(1500);
+					$('#column3Card1').delay(1000).fadeOut(100);
+					$('#row2Card6').delay(1000).fadeOut(1500);
+					$('#column6Card2').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -174,10 +175,10 @@ $(document).ready(function() {
 
 
 			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
-					$('#row2Card6').fadeOut(1500);
-					$('#column6Card2').fadeOut(100);
-					$('#row1Card3').fadeOut(1500);
-					$('#column3Card1').fadeOut(100);			
+					$('#row2Card6').delay(1000).fadeOut(1500);
+					$('#column6Card2').delay(1000).fadeOut(100);
+					$('#row1Card3').delay(1000).fadeOut(1500);
+					$('#column3Card1').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -187,10 +188,10 @@ $(document).ready(function() {
 			$('#row2Card1').fadeIn("fast");
 	
 			if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
-					$('#row2Card1').fadeOut(1500);
-					$('#column1Card2').fadeOut(100);
-					$('#row3Card3').fadeOut(1500);
-					$('#column3Card3').fadeOut(100);
+					$('#row2Card1').delay(1000).fadeOut(1500);
+					$('#column1Card2').delay(1000).fadeOut(100);
+					$('#row3Card3').delay(1000).fadeOut(1500);
+					$('#column3Card3').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -200,10 +201,10 @@ $(document).ready(function() {
 
 
 			if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
-					$('#row3Card3').fadeOut(1500);
-					$('#column3Card3').fadeOut(100);
-					$('#row2Card1').fadeOut(1500);
-					$('#column1Card2').fadeOut(100);			
+					$('#row3Card3').delay(1000).fadeOut(1500);
+					$('#column3Card3').delay(1000).fadeOut(100);
+					$('#row2Card1').delay(1000).fadeOut(1500);
+					$('#column1Card2').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -213,10 +214,10 @@ $(document).ready(function() {
 			$('#row2Card2').fadeIn("fast");
 	
 			if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
-					$('#row2Card2').fadeOut(1500);
-					$('#column2Card2').fadeOut(100);
-					$('#row4Card4').fadeOut(1500);
-					$('#column4Card4').fadeOut(100);
+					$('#row2Card2').delay(1000).fadeOut(1500);
+					$('#column2Card2').delay(1000).fadeOut(100);
+					$('#row4Card4').delay(1000).fadeOut(1500);
+					$('#column4Card4').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -226,10 +227,10 @@ $(document).ready(function() {
 
 
 			if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
-					$('#row4Card4').fadeOut(1500);
-					$('#column4Card4').fadeOut(100);
-					$('#row2Card2').fadeOut(1500);
-					$('#column2Card2').fadeOut(100);			
+					$('#row4Card4').delay(1000).fadeOut(1500);
+					$('#column4Card4').delay(1000).fadeOut(100);
+					$('#row2Card2').delay(1000).fadeOut(1500);
+					$('#column2Card2').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -240,10 +241,10 @@ $(document).ready(function() {
 			$('#row2Card3').fadeIn("fast");
 	
 			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
-					$('#row2Card3').fadeOut(1500);
-					$('#column3Card2').fadeOut(100);
-					$('#row3Card5').fadeOut(1500);
-					$('#column5Card3').fadeOut(100);
+					$('#row2Card3').delay(1000).fadeOut(1500);
+					$('#column3Card2').delay(1000).fadeOut(100);
+					$('#row3Card5').delay(1000).fadeOut(1500);
+					$('#column5Card3').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -253,10 +254,10 @@ $(document).ready(function() {
 
 
 			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
-					$('#row3Card5').fadeOut(1500);
-					$('#column5Card3').fadeOut(100);
-					$('#row2Card3').fadeOut(1500);
-					$('#column3Card2').fadeOut(100);			
+					$('#row3Card5').delay(1000).fadeOut(1500);
+					$('#column5Card3').delay(1000).fadeOut(100);
+					$('#row2Card3').delay(1000).fadeOut(1500);
+					$('#column3Card2').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -266,10 +267,10 @@ $(document).ready(function() {
 			$('#row2Card4').fadeIn("fast");
 	
 			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
-					$('#row2Card4').fadeOut(1500);
-					$('#column4Card2').fadeOut(100);
-					$('#row3Card6').fadeOut(1500);
-					$('#column6Card3').fadeOut(100);
+					$('#row2Card4').delay(1000).fadeOut(1500);
+					$('#column4Card2').delay(1000).fadeOut(100);
+					$('#row3Card6').delay(1000).fadeOut(1500);
+					$('#column6Card3').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -279,10 +280,10 @@ $(document).ready(function() {
 
 
 			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
-					$('#row3Card6').fadeOut(1500);
-					$('#column6Card3').fadeOut(100);
-					$('#row2Card4').fadeOut(1500);
-					$('#column4Card2').fadeOut(100);			
+					$('#row3Card6').delay(1000).fadeOut(1500);
+					$('#column6Card3').delay(1000).fadeOut(100);
+					$('#row2Card4').delay(1000).fadeOut(1500);
+					$('#column4Card2').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -292,10 +293,10 @@ $(document).ready(function() {
 			$('#row2Card5').fadeIn("fast");
 	
 			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
-					$('#row2Card5').fadeOut(1500);
-					$('#column5Card2').fadeOut(100);
-					$('#row4Card5').fadeOut(1500);
-					$('#column5Card4').fadeOut(100);
+					$('#row2Card5').delay(1000).fadeOut(1500);
+					$('#column5Card2').delay(1000).fadeOut(100);
+					$('#row4Card5').delay(1000).fadeOut(1500);
+					$('#column5Card4').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -305,10 +306,10 @@ $(document).ready(function() {
 
 
 			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
-					$('#row4Card5').fadeOut(1500);
-					$('#column5Card4').fadeOut(100);
-					$('#row2Card5').fadeOut(1500);
-					$('#column5Card2').fadeOut(100);			
+					$('#row4Card5').delay(1000).fadeOut(1500);
+					$('#column5Card4').delay(1000).fadeOut(100);
+					$('#row2Card5').delay(1000).fadeOut(1500);
+					$('#column5Card2').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -318,10 +319,10 @@ $(document).ready(function() {
 			$('#row4Card2').fadeIn("fast");
 	
 			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
-					$('#row4Card2').fadeOut(1500);
-					$('#column2Card4').fadeOut(100);
-					$('#row4Card6').fadeOut(1500);
-					$('#column6Card4').fadeOut(100);
+					$('#row4Card2').delay(1000).fadeOut(1500);
+					$('#column2Card4').delay(1000).fadeOut(100);
+					$('#row4Card6').delay(1000).fadeOut(1500);
+					$('#column6Card4').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -331,10 +332,10 @@ $(document).ready(function() {
 
 
 			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
-					$('#row4Card6').fadeOut(1500);
-					$('#column6Card4').fadeOut(100);
-					$('#row4Card2').fadeOut(1500);
-					$('#column2Card4').fadeOut(100);			
+					$('#row4Card6').delay(1000).fadeOut(1500);
+					$('#column6Card4').delay(1000).fadeOut(100);
+					$('#row4Card2').delay(1000).fadeOut(1500);
+					$('#column2Card4').delay(1000).fadeOut(100);			
 			}	
 	});
 
@@ -344,10 +345,10 @@ $(document).ready(function() {
 			$('#row3Card1').fadeIn("fast");
 	
 			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
-					$('#row3Card1').fadeOut(1500);
-					$('#column1Card3').fadeOut(100);
-					$('#row4Card3').fadeOut(1500);
-					$('#column3Card4').fadeOut(100);
+					$('#row3Card1').delay(1000).fadeOut(1500);
+					$('#column1Card3').delay(1000).fadeOut(100);
+					$('#row4Card3').delay(1000).fadeOut(1500);
+					$('#column3Card4').delay(1000).fadeOut(100);
 			}															
 	});
 
@@ -357,10 +358,10 @@ $(document).ready(function() {
 
 
 			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
-					$('#row4Card3').fadeOut(1500);
-					$('#column3Card4').fadeOut(100);
-					$('#row3Card1').fadeOut(1500);
-					$('#column1Card3').fadeOut(100);			
+					$('#row4Card3').delay(1000).fadeOut(1500);
+					$('#column3Card4').delay(1000).fadeOut(100);
+					$('#row3Card1').delay(1000).fadeOut(1500);
+					$('#column1Card3').delay(1000).fadeOut(100);			
 			}	
 	});
 });
