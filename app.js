@@ -20,9 +20,10 @@ $(document).ready(function() {
 					$('#row3Card2').fadeOut(1500);
 					$('#column2Card3').fadeOut(100);
 			}
-			if ($('.asianPic').hasClass( "clicked" )) {
-					console.log('2 clicks!');
-			}						
+			if ($('.clicked').length === 2) {
+				console.log('clicked!')
+			}	
+
 	});
 
 	$('#column2Card3').on("click", function() {
@@ -36,9 +37,9 @@ $(document).ready(function() {
 					$('#column2Card3').fadeOut(100);
 					$('#row1Card5').fadeOut(1500);
 					$('#column5Card1').fadeOut(100);			
-			}
-			if ($('.asianPic').hasClass( "clicked" )) {
-					console.log('2 clicks!');
+			}	
+			if ($('.clicked').length === 2) {
+				console.log('clicked!')
 			}	
 	});
 
@@ -54,10 +55,10 @@ $(document).ready(function() {
 					$('#column4Card1').fadeOut(100);
 					$('#row1Card6').fadeOut(1500);
 					$('#column6Card1').fadeOut(100);
-			}
-			if ($('.asianPic').hasClass( "clicked" )) {
-					console.log('2 clicks!');
-			}															
+			}		
+			if ($('.clicked').length === 2) {
+				console.log('clicked!')
+			}													
 	});
 
 	$('#column6Card1').on("click", function() {
@@ -70,9 +71,9 @@ $(document).ready(function() {
 					$('#column6Card1').fadeOut(100);
 					$('#row1Card4').fadeOut(1500);
 					$('#column4Card1').fadeOut(100);			
-			}
-			if ($('.asianPic').hasClass( "clicked" )) {
-					console.log('2 clicks!');
+			}	
+			if ($('.clicked').length === 2) {
+				console.log('clicked!')
 			}	
 	});
 
