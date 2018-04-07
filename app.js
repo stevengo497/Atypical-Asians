@@ -2,23 +2,33 @@ console.log('Up and running!');
 
 $(document).ready(function() {
 
+// when pic is clicked, add a new class 'Clicked' then find out if === 2 cards are clicked, see if they match, if not -- change display (the Asian pic) back to none (so it's no longer visible) and remove class 'Clicked' so that the next 2 can be shown as clicked and reran again
+// max 2 cards at one time
+
+
+//while method or if $('.clicked') === 2 then check for match, if not remove clicked class and picture, go back to yingyang pic
 
 // Jackie Chan //
 	$('#column5Card1').on("click", function() {	
 			$('#row1Card5').css({'display' : 'block'});
 			$('#row1Card5').fadeIn("fast");
+			$('#row1Card5').addClass("clicked");
 	
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
 					$('#row1Card5').fadeOut(1500);
 					$('#column5Card1').fadeOut(100);
 					$('#row3Card2').fadeOut(1500);
 					$('#column2Card3').fadeOut(100);
-			}															
+			}
+			if ($('.asianPic').hasClass( "clicked" )) {
+					console.log('2 clicks!');
+			}						
 	});
 
 	$('#column2Card3').on("click", function() {
   		$('#row3Card2').css({'display' : 'block'});
 			$('#row3Card2').fadeIn("fast");
+			$('#row3Card2').addClass("clicked");
 
 
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
@@ -26,6 +36,9 @@ $(document).ready(function() {
 					$('#column2Card3').fadeOut(100);
 					$('#row1Card5').fadeOut(1500);
 					$('#column5Card1').fadeOut(100);			
+			}
+			if ($('.asianPic').hasClass( "clicked" )) {
+					console.log('2 clicks!');
 			}	
 	});
 
@@ -34,27 +47,35 @@ $(document).ready(function() {
 	$('#column4Card1').on("click", function() {	
 			$('#row1Card4').css({'display' : 'block'});
 			$('#row1Card4').fadeIn("fast");
+			$('#row1Card4').addClass("clicked");
 	
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
 					$('#row1Card4').fadeOut(1500);
 					$('#column4Card1').fadeOut(100);
 					$('#row1Card6').fadeOut(1500);
 					$('#column6Card1').fadeOut(100);
+			}
+			if ($('.asianPic').hasClass( "clicked" )) {
+					console.log('2 clicks!');
 			}															
 	});
 
 	$('#column6Card1').on("click", function() {
   		$('#row1Card6').css({'display' : 'block'});
 			$('#row1Card6').fadeIn("fast");
-
+			$('#row1Card6').addClass("clicked");
 
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
 					$('#row1Card6').fadeOut(1500);
 					$('#column6Card1').fadeOut(100);
 					$('#row1Card4').fadeOut(1500);
 					$('#column4Card1').fadeOut(100);			
+			}
+			if ($('.asianPic').hasClass( "clicked" )) {
+					console.log('2 clicks!');
 			}	
 	});
+
 
 // Daniel Wu//
 	$('#column1Card1').on("click", function() {	
@@ -317,8 +338,6 @@ $(document).ready(function() {
 					$('#column1Card3').fadeOut(100);			
 			}	
 	});
-
-
 });
 
 
