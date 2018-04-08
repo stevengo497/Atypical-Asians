@@ -9,8 +9,6 @@ $(document).ready(function() {
 
 //if match, css animation = scale (1.5, 1.5), add new class if matched
 
-//remove class YinYang if matched
-
 // Jackie Chan //
 	$('#column5Card1').on("click", function() {	
 			$('#row1Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
@@ -33,7 +31,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -58,7 +56,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -85,7 +83,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -110,7 +108,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -136,7 +134,7 @@ $(document).ready(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}												
 	});
 
@@ -160,7 +158,7 @@ $(document).ready(function() {
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -185,7 +183,7 @@ $(document).ready(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}												
 	});
 
@@ -209,7 +207,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});			
 
@@ -234,7 +232,7 @@ $(document).ready(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}											
 	});
 
@@ -258,7 +256,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -283,7 +281,7 @@ $(document).ready(function() {
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}	
 	});
 
@@ -307,7 +305,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});			
 
@@ -332,7 +330,7 @@ $(document).ready(function() {
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -356,7 +354,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});			
 
@@ -381,7 +379,7 @@ $(document).ready(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}											
 	});
 
@@ -405,7 +403,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -430,7 +428,7 @@ $(document).ready(function() {
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}											
 	});
 
@@ -454,7 +452,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});			
 
@@ -479,7 +477,7 @@ $(document).ready(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}												
 	});
 
@@ -503,7 +501,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});			
 
@@ -528,7 +526,7 @@ $(document).ready(function() {
 				} 														
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -552,7 +550,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});			
 
@@ -577,7 +575,7 @@ $(document).ready(function() {
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 
@@ -601,7 +599,7 @@ $(document).ready(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					console.log('Winner');
+					alert('Congrats! You know your Asians!');
 				}
 	});
 });	

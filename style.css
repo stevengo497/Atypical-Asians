@@ -1,6 +1,7 @@
 li {
 	list-style-type: none;
-	display: inline-block;
+	/*display: inline-block;*/
+	padding: 0px;
 }
 
 .table-background {
@@ -24,10 +25,19 @@ li {
 	background-color: #FFF35B;
 }
 
-#gameBtn {
+.buttons {
+	position: relative;
+	text-align: center;
+}
+
+#instructionsBtn {
+	margin-left: 50px;
+}
+
+/*#gameBtn {
 	display: inline-block;
 	margin-left: 42.5%;
-}
+}*/
 
 .clicked {
 	
@@ -201,7 +211,7 @@ h1 {
 	margin-top: 3%;
 	display: none;
 }
-/*Jackie-------------------*/
+
 #row1Card5 {
 	margin-left: 60%;
 	margin-top: 3%;
@@ -255,7 +265,7 @@ h1 {
 	margin-top: 21%;
 	display: none;
 }
-/*Jackie-------------------*/
+
 #row3Card2 {
 	margin-left: 30%;
 	margin-top: 21%;
