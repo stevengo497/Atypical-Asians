@@ -13,9 +13,7 @@ $(document).ready(function() {
 
 // Jackie Chan //
 	$('#column5Card1').on("click", function() {	
-			$('#row1Card5').css({'display' : 'block'});
-			$('#row1Card5').fadeIn("fast");
-			$('#row1Card5').addClass("clicked");
+			$('#row1Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
 		
 		let checkChan1 = function () {
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
@@ -27,7 +25,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkChan1();
 				}
 					
@@ -41,9 +38,7 @@ $(document).ready(function() {
 	});
 
 	$('#column2Card3').on("click", function() {	 
-			$('#row3Card2').css({'display' : 'block'});
-			$('#row3Card2').fadeIn("fast");
-			$('#row3Card2').addClass("clicked");
+			$('#row3Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
 
 		let checkChan2 = function () {
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
@@ -55,7 +50,6 @@ $(document).ready(function() {
 			}
 		}	
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkChan2();
 				}	
 
@@ -71,9 +65,7 @@ $(document).ready(function() {
 
 // Jet Li //
 	$('#column4Card1').on("click", function() {	
-			$('#row1Card4').css({'display' : 'block'});
-			$('#row1Card4').fadeIn("fast");
-			$('#row1Card4').addClass("clicked");
+			$('#row1Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
 		
 		let checkLi1 = function () {
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
@@ -85,7 +77,6 @@ $(document).ready(function() {
 			}
 		}	
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkLi1();
 				}	
 
@@ -99,9 +90,7 @@ $(document).ready(function() {
 	});
 
 	$('#column6Card1').on("click", function() {
-  		$('#row1Card6').css({'display' : 'block'});
-			$('#row1Card6').fadeIn("fast");
-			$('#row1Card6').addClass("clicked");
+  		$('#row1Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
 		
 		let checkLi2 = function () {		
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
@@ -113,7 +102,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkLi2();
 				}
 
@@ -129,10 +117,8 @@ $(document).ready(function() {
 
 // Daniel Wu//
 	$('#column1Card1').on("click", function() {	
-			$('#row1Card1').css({'display' : 'block'});
-			$('#row1Card1').fadeIn("fast");
-			$('#row1Card1').addClass("clicked");
-		
+			$('#row1Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+			
 		let checkWu1 = function () {
 			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
 					$('#row1Card1').delay(1000).fadeOut(1500);
@@ -142,7 +128,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkWu1();
 				}
 					
@@ -156,10 +141,8 @@ $(document).ready(function() {
 	});
 
 	$('#column1Card4').on("click", function() {
-  		$('#row4Card1').css({'display' : 'block'});
-			$('#row4Card1').fadeIn("fast");
-			$('#row4Card1').addClass("clicked");
-		
+  		$('#row4Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+				
 		let checkWu2 = function () {
 			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
 					$('#row4Card1').delay(1000).fadeOut(1500);
@@ -169,7 +152,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkWu2();
 				}
 					
@@ -184,10 +166,8 @@ $(document).ready(function() {
 
 // Donnie Yen//
 	$('#column2Card1').on("click", function() {	
-			$('#row1Card2').css({'display' : 'block'});
-			$('#row1Card2').fadeIn("fast");
-			$('#row1Card2').addClass("clicked");
-		
+			$('#row1Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+				
 		let checkYen1 = function () {
 			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
 					$('#row1Card2').delay(1000).fadeOut(1500);
@@ -197,7 +177,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkYen1();
 				}
 					
@@ -211,10 +190,8 @@ $(document).ready(function() {
 	});
 
 	$('#column4Card3').on("click", function() {
-  		$('#row3Card4').css({'display' : 'block'});
-			$('#row3Card4').fadeIn("fast");
-			$('#row3Card4').addClass("clicked");
-		
+  		$('#row3Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+					
 		let checkYen2 = function () {
 			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
 					$('#row3Card4').delay(1000).fadeOut(1500);
@@ -224,7 +201,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkYen2();
 				}
 					
@@ -239,9 +215,7 @@ $(document).ready(function() {
 
 //Tony Jaa
 	$('#column3Card1').on("click", function() {	
-			$('#row1Card3').css({'display' : 'block'});
-			$('#row1Card3').fadeIn("fast");
-			$('#row1Card3').addClass("clicked");
+			$('#row1Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");		
 		
 		let checkJaa1 = function () {
 			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
@@ -252,7 +226,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkJaa1();
 				}
 					
@@ -266,10 +239,8 @@ $(document).ready(function() {
 	});
 
 	$('#column6Card2').on("click", function() {
-  		$('#row2Card6').css({'display' : 'block'});
-			$('#row2Card6').fadeIn("fast");
-			$('#row2Card6').addClass("clicked");
-		
+  		$('#row2Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+				
 		let checkJaa2 = function () {
 			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
 					$('#row2Card6').delay(1000).fadeOut(1500);
@@ -279,7 +250,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkJaa2();
 				}
 					
@@ -294,9 +264,7 @@ $(document).ready(function() {
 
 //Steven Yeun
 	$('#column1Card2').on("click", function() {	
-			$('#row2Card1').css({'display' : 'block'});
-			$('#row2Card1').fadeIn("fast");
-			$('#row2Card1').addClass("clicked");
+			$('#row2Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");	
 		
 		let checkYeun1 = function () {
 			if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
@@ -307,7 +275,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkYeun1();
 				}
 					
@@ -321,10 +288,8 @@ $(document).ready(function() {
 	});
 
 	$('#column3Card3').on("click", function() {
-  		$('#row3Card3').css({'display' : 'block'});
-			$('#row3Card3').fadeIn("fast");
-			$('#row3Card3').addClass("clicked");
-		
+  		$('#row3Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+					
 		let checkYeun2 = function () {
 			if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
 					$('#row3Card3').delay(1000).fadeOut(1500);
@@ -334,7 +299,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkYeun2();
 				}
 					
@@ -349,9 +313,7 @@ $(document).ready(function() {
 
 //Steve Ngo
 	$('#column2Card2').on("click", function() {	
-			$('#row2Card2').css({'display' : 'block'});
-			$('#row2Card2').fadeIn("fast");
-			$('#row2Card2').addClass("clicked");
+			$('#row2Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");		
 		
 		let checkNgo1 = function () {
 			if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
@@ -362,7 +324,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkNgo1();
 				}
 					
@@ -376,10 +337,8 @@ $(document).ready(function() {
 	});
 
 	$('#column4Card4').on("click", function() {
-  		$('#row4Card4').css({'display' : 'block'});
-			$('#row4Card4').fadeIn("fast");
-			$('#row4Card4').addClass("clicked");
-		
+  		$('#row4Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+					
 		let checkNgo2 = function () {
 			if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
 					$('#row4Card4').delay(1000).fadeOut(1500);
@@ -389,7 +348,6 @@ $(document).ready(function() {
 			}	
 	}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkNgo2();
 				}
 					
@@ -404,9 +362,7 @@ $(document).ready(function() {
 
 //Bruce Lee
 	$('#column3Card2').on("click", function() {	
-			$('#row2Card3').css({'display' : 'block'});
-			$('#row2Card3').fadeIn("fast");
-			$('#row2Card3').addClass("clicked");
+			$('#row2Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");			
 		
 		let checkLee1 = function () {
 			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
@@ -417,7 +373,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkLee1();
 				}
 					
@@ -431,10 +386,8 @@ $(document).ready(function() {
 	});
 
 	$('#column5Card3').on("click", function() {
-  		$('#row3Card5').css({'display' : 'block'});
-			$('#row3Card5').fadeIn("fast");
-			$('#row3Card5').addClass("clicked");
-	
+  		$('#row3Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+				
 		let checkLee2 = function () {
 			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
 					$('#row3Card5').delay(1000).fadeOut(1500);
@@ -444,7 +397,6 @@ $(document).ready(function() {
 			}	
 		}				
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkLee2();
 				}
 					
@@ -459,9 +411,8 @@ $(document).ready(function() {
 
 	//Sung Kang
 	$('#column4Card2').on("click", function() {	
-			$('#row2Card4').css({'display' : 'block'});
-			$('#row2Card4').fadeIn("fast");
-			$('#row2Card4').addClass("clicked");
+			$('#row2Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+			
 		let checkKang1 = function () {
 			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
 					$('#row2Card4').delay(1000).fadeOut(1500);
@@ -471,7 +422,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkKang1();
 				}
 					
@@ -485,10 +435,8 @@ $(document).ready(function() {
 	});
 
 	$('#column6Card3').on("click", function() {
-  		$('#row3Card6').css({'display' : 'block'});
-			$('#row3Card6').fadeIn("fast");
-			$('#row3Card6').addClass("clicked");
-		
+  		$('#row3Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+					
 		let checkKang2 = function () {
 			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
 					$('#row3Card6').delay(1000).fadeOut(1500);
@@ -498,7 +446,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkKang2();
 				}
 					
@@ -513,9 +460,8 @@ $(document).ready(function() {
 
 	//John Cho
 	$('#column5Card2').on("click", function() {	
-			$('#row2Card5').css({'display' : 'block'});
-			$('#row2Card5').fadeIn("fast");
-			$('#row2Card5').addClass("clicked");
+			$('#row2Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+			
 		let checkCho1 = function () {
 			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
 					$('#row2Card5').delay(1000).fadeOut(1500);
@@ -525,7 +471,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkCho1();
 				}
 					
@@ -539,10 +484,8 @@ $(document).ready(function() {
 	});
 
 	$('#column5Card4').on("click", function() {
-  		$('#row4Card5').css({'display' : 'block'});
-			$('#row4Card5').fadeIn("fast");
-			$('#row4Card5').addClass("clicked");
-		
+  		$('#row4Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+					
 		let checkCho2 = function () {
 			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
 					$('#row4Card5').delay(1000).fadeOut(1500);
@@ -552,7 +495,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkCho2();
 				}
 					
@@ -567,9 +509,7 @@ $(document).ready(function() {
 
 	//Ken Jeong
 	$('#column2Card4').on("click", function() {	
-			$('#row4Card2').css({'display' : 'block'});
-			$('#row4Card2').fadeIn("fast");
-			$('#row4Card2').addClass("clicked");
+			$('#row4Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");			
 		
 		let checkJeong1 = function () {
 			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
@@ -580,7 +520,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkJeong1();
 				}
 					
@@ -594,9 +533,8 @@ $(document).ready(function() {
 	});
 
 	$('#column6Card4').on("click", function() {
-  		$('#row4Card6').css({'display' : 'block'});
-			$('#row4Card6').fadeIn("fast");
-			$('#row4Card6').addClass("clicked");
+  		$('#row4Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+			
 		let checkJeong2 = function () {
 			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
 					$('#row4Card6').delay(1000).fadeOut(1500);
@@ -606,7 +544,6 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkJeong2();
 				}
 					
@@ -621,9 +558,8 @@ $(document).ready(function() {
 
 	//Daniel Dae Kim
 	$('#column1Card3').on("click", function() {	
-			$('#row3Card1').css({'display' : 'block'});
-			$('#row3Card1').fadeIn("fast");
-			$('#row3Card1').addClass("clicked");
+			$('#row3Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+			
 		let checkKim1 = function () {
 			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
 					$('#row3Card1').delay(1000).fadeOut(1500);
@@ -633,7 +569,6 @@ $(document).ready(function() {
 			}
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkKim1();
 				}
 					
@@ -647,9 +582,8 @@ $(document).ready(function() {
 	});
 
 	$('#column3Card4').on("click", function() {
-  		$('#row4Card3').css({'display' : 'block'});
-			$('#row4Card3').fadeIn("fast");
-			$('#row4Card3').addClass("clicked");
+  		$('#row4Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
+			
 		let checkKim2 = function () {
 			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
 					$('#row4Card3').delay(1000).fadeOut(1500);
@@ -659,14 +593,13 @@ $(document).ready(function() {
 			}	
 		}
 				if ($('.clicked').length > 1) {
-					console.log('clicked!');
 					checkKim2();
 				}
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
 				}
-				
+
 				if ($('.yinYangRemove').length === 0) {
 					console.log('Winner');
 				}
