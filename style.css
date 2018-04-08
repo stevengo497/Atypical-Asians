@@ -1,6 +1,5 @@
 li {
 	list-style-type: none;
-	/*display: inline-block;*/
 	padding: 0px;
 }
 
@@ -34,15 +33,25 @@ li {
 	margin-left: 50px;
 }
 
-/*#gameBtn {
-	display: inline-block;
-	margin-left: 42.5%;
-}*/
-
-.clicked {
-	
+#start {
+	margin-left: 50px;
+	text-align: center;
 }
 
+#reset {
+	margin-left: 50px;
+}
+
+#timer {
+
+}
+
+.clicked {
+}
+
+#box {
+	color: white;
+}
 
 h1 {
 	color: #FFF35B;

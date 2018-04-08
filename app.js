@@ -8,6 +8,17 @@ $(document).ready(function() {
 //maybe all yinYang classes delayed from being pressed
 
 //if match, css animation = scale (1.5, 1.5), add new class if matched
+$(function() {
+$('#start').on('click', startCountdown);
+});
+
+	let startCountdown = (function() {
+		let i = 0;
+		setInterval(function(){
+			$('#box').html(i++)}, 1000);
+			$('#box').append('<p>' + '</p>')
+	})
+
 
 // Jackie Chan //
 	$('#column5Card1').on("click", function() {	
