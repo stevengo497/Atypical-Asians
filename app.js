@@ -1,19 +1,9 @@
 console.log('Up and running!');
 
-
-
-
-
-// Need to only allow 2 cards to play at the same time, CANNOT click until 2 unmatched cards are turned back around.
-// maybe if matched or unmatched, cannot use click function
-//only needed if unmatch, if match they can keep clicking
-//maybe all yinYang classes delayed from being pressed
-
-//if match, css animation = scale (1.5, 1.5), add new class if matched
 $(function() {
 	$('#start').click(function(){
 			
-			let i = 2;
+			let i = 90;
 			let timer = setInterval(function(){
 				i--;
 				$('#box').html(i);
@@ -24,18 +14,11 @@ $(function() {
 
 			}, 1000);
 		
-	//timer needs to stop when winner wins
-
-	//Need help - 1. how to stop click function if unmatch function is still going on and 
-	//2. How to get countdown to stop at 0 and pop alert
-	//3. Also need to get 'seconds' to be added to countdown clock (probably do the value and CSS the value properties to make the color and font match)
-
-
-
 // Jackie Chan //
 	$('#column5Card1').on("click", function() {	
-			$('#row1Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-		
+			if ($('.twoCards').length < 2) {
+			$('#row1Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}	
 		let checkChan1 = function () {
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
 					$('#row1Card5').delay(1000).fadeOut(1500);
@@ -45,22 +28,26 @@ $(function() {
 					
 			}
 		}
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 					checkChan1();
 				}
 					
-				if ($('.clicked').length > 1) {
-						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+				if ($('.clicked').length === 2) {
+						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");	
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);						
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
-				}
+				}	
 	});
 
 	$('#column2Card3').on("click", function() {	 
-			$('#row3Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-
+			if ($('.twoCards').length < 2) {	
+			$('#row3Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");		
+			}	
 		let checkChan2 = function () {
 			if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
 					$('#row3Card2').delay(1000).fadeOut(1500);
@@ -70,24 +57,28 @@ $(function() {
 								
 			}
 		}	
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 					checkChan2();
 				}	
 
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);	
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
-				}
+				}	
 	});
 
-
 // Jet Li //
+
 	$('#column4Card1').on("click", function() {	
-			$('#row1Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-		
+			if ($('.twoCards').length < 2) {
+			$('#row1Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");			
+			}	
 		let checkLi1 = function () {
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
 					$('#row1Card4').delay(1000).fadeOut(1500);
@@ -97,22 +88,26 @@ $(function() {
 					
 			}
 		}	
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 					checkLi1();
 				}	
 
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);	
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
-				}
+				}		
 	});
 
 	$('#column6Card1').on("click", function() {
-  		$('#row1Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-		
+			if ($('.twoCards').length < 2) {	
+  		$('#row1Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");			
+			}			
 		let checkLi2 = function () {		
 			if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
 					$('#row1Card6').delay(1000).fadeOut(1500);
@@ -122,12 +117,15 @@ $(function() {
 								
 			}
 		}
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 					checkLi2();
 				}
 
-				if ($('.clicked').length > 1) {
+				if ($('.clicked').length === 2) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);	
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -135,11 +133,11 @@ $(function() {
 				}
 	});
 
-
 // Daniel Wu//
-	$('#column1Card1').on("click", function() {	
-			$('#row1Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-			
+	$('#column1Card1').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row1Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}
 		let checkWu1 = function () {
 			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
 					$('#row1Card1').delay(1000).fadeOut(1500);
@@ -154,6 +152,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
@@ -162,8 +163,9 @@ $(function() {
 	});
 
 	$('#column1Card4').on("click", function() {
-  		$('#row4Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-				
+			if ($('.twoCards').length < 2) {
+  		$('#row4Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+				}
 		let checkWu2 = function () {
 			if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
 					$('#row4Card1').delay(1000).fadeOut(1500);
@@ -178,6 +180,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
@@ -186,9 +191,10 @@ $(function() {
 	});
 
 // Donnie Yen//
-	$('#column2Card1').on("click", function() {	
-			$('#row1Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-				
+	$('#column2Card1').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row1Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+				}
 		let checkYen1 = function () {
 			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
 					$('#row1Card2').delay(1000).fadeOut(1500);
@@ -203,6 +209,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
@@ -211,8 +220,9 @@ $(function() {
 	});
 
 	$('#column4Card3').on("click", function() {
-  		$('#row3Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-					
+			if ($('.twoCards').length < 2) {
+  		$('#row3Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+					}
 		let checkYen2 = function () {
 			if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
 					$('#row3Card4').delay(1000).fadeOut(1500);
@@ -227,6 +237,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -235,9 +248,10 @@ $(function() {
 	});			
 
 //Tony Jaa
-	$('#column3Card1').on("click", function() {	
-			$('#row1Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");		
-		
+	$('#column3Card1').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row1Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");		
+		}
 		let checkJaa1 = function () {
 			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
 					$('#row1Card3').delay(1000).fadeOut(1500);
@@ -252,6 +266,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
@@ -260,8 +277,9 @@ $(function() {
 	});
 
 	$('#column6Card2').on("click", function() {
-  		$('#row2Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-				
+			if ($('.twoCards').length < 2) {
+  		$('#row2Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+				}
 		let checkJaa2 = function () {
 			if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
 					$('#row2Card6').delay(1000).fadeOut(1500);
@@ -276,6 +294,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -284,9 +305,10 @@ $(function() {
 	});
 
 //Steven Yeun
-	$('#column1Card2').on("click", function() {	
-			$('#row2Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");	
-		
+	$('#column1Card2').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row2Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");	
+		}
 		let checkYeun1 = function () {
 			if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
 					$('#row2Card1').delay(1000).fadeOut(1500);
@@ -301,6 +323,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
@@ -309,8 +334,9 @@ $(function() {
 	});
 
 	$('#column3Card3').on("click", function() {
-  		$('#row3Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-					
+			if ($('.twoCards').length < 2) {
+  		$('#row3Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+					}
 		let checkYeun2 = function () {
 			if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
 					$('#row3Card3').delay(1000).fadeOut(1500);
@@ -325,6 +351,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -333,9 +362,10 @@ $(function() {
 	});			
 
 //Steve Ngo
-	$('#column2Card2').on("click", function() {	
-			$('#row2Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");		
-		
+	$('#column2Card2').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row2Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");		
+		}
 		let checkNgo1 = function () {
 			if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
 					$('#row2Card2').delay(1000).fadeOut(1500);
@@ -350,6 +380,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
@@ -358,8 +391,9 @@ $(function() {
 	});
 
 	$('#column4Card4').on("click", function() {
-  		$('#row4Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-					
+			if ($('.twoCards').length < 2) {
+  		$('#row4Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+					}
 		let checkNgo2 = function () {
 			if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
 					$('#row4Card4').delay(1000).fadeOut(1500);
@@ -374,6 +408,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -382,9 +419,10 @@ $(function() {
 	});			
 
 //Bruce Lee
-	$('#column3Card2').on("click", function() {	
-			$('#row2Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");			
-		
+	$('#column3Card2').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row2Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");			
+		}
 		let checkLee1 = function () {
 			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
 					$('#row2Card3').delay(1000).fadeOut(1500);
@@ -399,6 +437,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
@@ -407,8 +448,9 @@ $(function() {
 	});
 
 	$('#column5Card3').on("click", function() {
-  		$('#row3Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-				
+			if ($('.twoCards').length < 2) {
+  		$('#row3Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+				}
 		let checkLee2 = function () {
 			if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
 					$('#row3Card5').delay(1000).fadeOut(1500);
@@ -423,6 +465,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -431,9 +476,10 @@ $(function() {
 	});
 
 	//Sung Kang
-	$('#column4Card2').on("click", function() {	
-			$('#row2Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-			
+	$('#column4Card2').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row2Card4').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}
 		let checkKang1 = function () {
 			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
 					$('#row2Card4').delay(1000).fadeOut(1500);
@@ -448,6 +494,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
@@ -456,8 +505,9 @@ $(function() {
 	});
 
 	$('#column6Card3').on("click", function() {
-  		$('#row3Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-					
+			if ($('.twoCards').length < 2) {
+  		$('#row3Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+					}
 		let checkKang2 = function () {
 			if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
 					$('#row3Card6').delay(1000).fadeOut(1500);
@@ -472,6 +522,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -480,9 +533,10 @@ $(function() {
 	});			
 
 	//John Cho
-	$('#column5Card2').on("click", function() {	
-			$('#row2Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-			
+	$('#column5Card2').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row2Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}
 		let checkCho1 = function () {
 			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
 					$('#row2Card5').delay(1000).fadeOut(1500);
@@ -497,6 +551,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
@@ -505,8 +562,9 @@ $(function() {
 	});
 
 	$('#column5Card4').on("click", function() {
-  		$('#row4Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-					
+			if ($('.twoCards').length < 2) {
+  		$('#row4Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+					}
 		let checkCho2 = function () {
 			if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
 					$('#row4Card5').delay(1000).fadeOut(1500);
@@ -521,6 +579,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -529,9 +590,10 @@ $(function() {
 	});			
 
 	//Ken Jeong
-	$('#column2Card4').on("click", function() {	
-			$('#row4Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");			
-		
+	$('#column2Card4').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row4Card2').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");			
+		}
 		let checkJeong1 = function () {
 			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
 					$('#row4Card2').delay(1000).fadeOut(1500);
@@ -546,6 +608,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				} 														
 
 				if ($('.yinYangRemove').length === 0) {
@@ -554,8 +619,9 @@ $(function() {
 	});
 
 	$('#column6Card4').on("click", function() {
-  		$('#row4Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-			
+			if ($('.twoCards').length < 2) {
+  		$('#row4Card6').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}
 		let checkJeong2 = function () {
 			if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
 					$('#row4Card6').delay(1000).fadeOut(1500);
@@ -570,6 +636,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
@@ -578,9 +647,10 @@ $(function() {
 	});			
 
 	//Daniel Dae Kim
-	$('#column1Card3').on("click", function() {	
-			$('#row3Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-			
+	$('#column1Card3').on("click", function() {
+		if ($('.twoCards').length < 2) {	
+			$('#row3Card1').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}
 		let checkKim1 = function () {
 			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
 					$('#row3Card1').delay(1000).fadeOut(1500);
@@ -595,6 +665,9 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
@@ -603,8 +676,9 @@ $(function() {
 	});
 
 	$('#column3Card4').on("click", function() {
-  		$('#row4Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked");
-			
+			if ($('.twoCards').length < 2) {
+  		$('#row4Card3').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
+			}
 		let checkKim2 = function () {
 			if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
 					$('#row4Card3').delay(1000).fadeOut(1500);
@@ -619,86 +693,19 @@ $(function() {
 					
 				if ($('.clicked').length > 1) {
 						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						setTimeout(function() {
+							$('.twoCards').removeClass("twoCards");
+							}, 2200);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
 				}
-		
-		
-		});	
+	});	
 	});	
 });
 
 
 
 
-	// if (chosenCards.length === 2) {
-	// 	checkForMatch();
-	// }
-
-
-
-/******* ARRAY IF NEEDED FOR REFACTORING****
-let cards = [
-{		name: 'Jackie-Chan',
-		position1: $('#row1Card5'),
-		position2: $('#row3Card2'),
-},
-
-{		name: 'Jet-Li',
-		position1: $('#row1Card4'),
-		position2: $('#row1Card6')
-},
-
-{		name: 'Daniel-Wu',
-		position1: $('#row1Card1'),
-		position2: $('#row4Card1')
-},
-
-{		name: 'Donnie-Yen',
-		position1: $('#row1Card2'),
-		position2: $('#row3Card4')
-},
-
-{		name: 'Tony-Jaa',
-		position1: $('#row1Card3'),
-		position2: $('#row2Card6')
-},
-
-{		name: 'Steven-Yeun',
-		position1: $('#row2Card1'),
-		position2: $('#row3Card3')
-},
-
-{		name: 'Steve-Ngo',
-		position1: $('#row2Card2'),
-		position2: $('#row4Card4')
-},
-
-{		name: 'Bruce-Lee',
-		position1: $('#row2Card3'),
-		position2: $('#row3Card5')
-},
-
-{		name: 'Sung-Kang',
-		position1: $('#row2Card4'),
-		position2: $('#row3Card6')
-},
-
-{		name: 'John-Cho',
-		position1: $('#row2Card5'),
-		position2: $('#row4Card5')
-},
-
-{		name: 'Daniel-Dae-Kim',
-		position1: $('#row3Card1'),
-		position2: $('#row4Card3')
-},
-
-{		name: 'Ken-Jeong',
-		position1: $('#row4Card2'),
-		position2: $('#row4Card6')
-},
-
-]; */
+	
