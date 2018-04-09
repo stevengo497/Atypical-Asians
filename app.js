@@ -31,14 +31,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length === 2) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");	
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");	
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);						
+								}, 2100);						
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}	
 		});
 
@@ -59,14 +60,15 @@ $(function() {
 				}	
 
 				if ($('.clicked').length === 2) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);	
+								}, 2100);	
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}	
 		});
 
@@ -89,14 +91,15 @@ $(function() {
 				}	
 
 				if ($('.clicked').length === 2) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);	
+								}, 2100);	
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}		
 		});
 
@@ -117,14 +120,15 @@ $(function() {
 				}
 
 				if ($('.clicked').length === 2) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);	
+								}, 2100);	
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -146,14 +150,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}												
 		});
 
@@ -174,14 +179,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -203,14 +209,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}												
 		});
 
@@ -231,14 +238,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});			
 
@@ -260,14 +268,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}											
 		});
 
@@ -288,14 +297,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -317,14 +327,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}	
 		});
 
@@ -345,14 +356,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});			
 
@@ -374,14 +386,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -402,14 +415,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});			
 
@@ -431,14 +445,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}											
 		});
 
@@ -459,14 +474,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -488,14 +504,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}											
 		});
 
@@ -516,14 +533,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});			
 
@@ -545,14 +563,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}												
 		});
 
@@ -573,14 +592,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});			
 
@@ -602,14 +622,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				} 														
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -630,14 +651,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});			
 
@@ -659,14 +681,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-							$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 							setTimeout(function() {
 								$('.twoCards').removeClass("twoCards");
-								}, 2200);
+								}, 2100);
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});
 
@@ -687,14 +710,15 @@ $(function() {
 				}
 					
 				if ($('.clicked').length > 1) {
-						$('.clicked').delay(2000).fadeOut(200).removeClass("clicked");
+						$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");
 						setTimeout(function() {
 							$('.twoCards').removeClass("twoCards");
-							}, 2200);
+							}, 2100);
 				}
 
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
+					clearInterval(timer);
 				}
 		});	
 	});	
