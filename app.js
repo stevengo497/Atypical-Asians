@@ -11,23 +11,19 @@ console.log('Up and running!');
 
 //if match, css animation = scale (1.5, 1.5), add new class if matched
 $(function() {
-$('#start').on('click', startCountdown);
-});
+	$('#start').click(function(){
+			
+			let i = 2;
+			let timer = setInterval(function(){
+				i--;
+				$('#box').html(i);
+			if (i < 0 ) {
+				clearInterval(timer);
+				alert('time is up, find more Asian friends')
+			}
 
-	let startCountdown = (function() {
+			}, 1000);
 		
-		let i = 2;
-		let timer = setInterval(function(){
-			i--;
-			$('#box').html(i);
-		if (i === 0 ) {
-			clearInterval(timer);
-			alert('time is up')
-		}
-
-		}, 1000);
-	})
-
 	//timer needs to stop when winner wins
 
 	//Need help - 1. how to stop click function if unmatch function is still going on and 
@@ -628,7 +624,11 @@ $('#start').on('click', startCountdown);
 				if ($('.yinYangRemove').length === 0) {
 					alert('Congrats! You know your Asians!');
 				}
-	});
+		
+		
+		});	
+	});	
+});
 
 
 
