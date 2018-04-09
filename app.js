@@ -13,10 +13,11 @@ $('#start').on('click', startCountdown);
 });
 
 	let startCountdown = (function() {
-		let i = 0;
+		
+		let i = 90;
 		setInterval(function(){
-			$('#box').html(i++)}, 1000);
-			$('#box').append('<p>' + '</p>')
+			$('#box').html(i--)}, 1000)
+			$('#box').append([i--] + 'seconds')
 	})
 
 
