@@ -20,9 +20,9 @@ $(function() {
 				}	
 			let checkChan1 = function () {
 				if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-						$('#row1Card5').delay(1000).fadeOut(1500);
+						$('#row1Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row3Card2').delay(1000).fadeOut(1500);
+						$('#row3Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -49,9 +49,9 @@ $(function() {
 				}	
 			let checkChan2 = function () {
 				if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-						$('#row3Card2').delay(1000).fadeOut(1500);
+						$('#row3Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row1Card5').delay(1000).fadeOut(1500);
+						$('#row1Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');				
 				}
 			}	
@@ -80,9 +80,9 @@ $(function() {
 				}	
 			let checkLi1 = function () {
 				if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
-						$('#row1Card4').delay(1000).fadeOut(1500);
+						$('#row1Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row1Card6').delay(1000).fadeOut(1500);
+						$('#row1Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');	
 				}
 			}	
@@ -109,9 +109,9 @@ $(function() {
 				}			
 			let checkLi2 = function () {		
 				if ($('#row1Card6').is(':visible') && $('#row1Card4').is(':visible')) {
-						$('#row1Card6').delay(1000).fadeOut(1500);
+						$('#row1Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row1Card4').delay(1000).fadeOut(1500);
+						$('#row1Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}
 			}
@@ -139,9 +139,9 @@ $(function() {
 				}
 			let checkWu1 = function () {
 				if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
-						$('#row1Card1').delay(1000).fadeOut(1500);
+						$('#row1Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row4Card1').delay(1000).fadeOut(1500);
+						$('#row4Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -168,9 +168,9 @@ $(function() {
 				}
 			let checkWu2 = function () {
 				if ($('#row4Card1').is(':visible') && $('#row1Card1').is(':visible')) {
-						$('#row4Card1').delay(1000).fadeOut(1500);
+						$('#row4Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row1Card1').delay(1000).fadeOut(1500);
+						$('#row1Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -198,9 +198,9 @@ $(function() {
 				}
 			let checkYen1 = function () {
 				if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
-						$('#row1Card2').delay(1000).fadeOut(1500);
+						$('#row1Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row3Card4').delay(1000).fadeOut(1500);
+						$('#row3Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -227,9 +227,9 @@ $(function() {
 				}
 			let checkYen2 = function () {
 				if ($('#row3Card4').is(':visible') && $('#row1Card2').is(':visible')) {
-						$('#row3Card4').delay(1000).fadeOut(1500);
+						$('#row3Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row1Card2').delay(1000).fadeOut(1500);
+						$('#row1Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -257,9 +257,9 @@ $(function() {
 				}
 			let checkJaa1 = function () {
 				if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
-						$('#row1Card3').delay(1000).fadeOut(1500);
+						$('#row1Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row2Card6').delay(1000).fadeOut(1500);
+						$('#row2Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -286,9 +286,9 @@ $(function() {
 				}
 			let checkJaa2 = function () {
 				if ($('#row2Card6').is(':visible') && $('#row1Card3').is(':visible')) {
-						$('#row2Card6').delay(1000).fadeOut(1500);
+						$('#row2Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row1Card3').delay(1000).fadeOut(1500);
+						$('#row1Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -316,9 +316,9 @@ $(function() {
 				}
 			let checkYeun1 = function () {
 				if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
-						$('#row2Card1').delay(1000).fadeOut(1500);
+						$('#row2Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row3Card3').delay(1000).fadeOut(1500);
+						$('#row3Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 		}
@@ -345,9 +345,9 @@ $(function() {
 				}
 			let checkYeun2 = function () {
 				if ($('#row3Card3').is(':visible') && $('#row2Card1').is(':visible')) {
-						$('#row3Card3').delay(1000).fadeOut(1500);
+						$('#row3Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row2Card1').delay(1000).fadeOut(1500);
+						$('#row2Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -375,9 +375,9 @@ $(function() {
 				}
 			let checkNgo1 = function () {
 				if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
-						$('#row2Card2').delay(1000).fadeOut(1500);
+						$('#row2Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row4Card4').delay(1000).fadeOut(1500);
+						$('#row4Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -404,9 +404,9 @@ $(function() {
 				}
 			let checkNgo2 = function () {
 				if ($('#row4Card4').is(':visible') && $('#row2Card2').is(':visible')) {
-						$('#row4Card4').delay(1000).fadeOut(1500);
+						$('#row4Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row2Card2').delay(1000).fadeOut(1500);
+						$('#row2Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 		}
@@ -434,9 +434,9 @@ $(function() {
 				}
 			let checkLee1 = function () {
 				if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
-						$('#row2Card3').delay(1000).fadeOut(1500);
+						$('#row2Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row3Card5').delay(1000).fadeOut(1500);
+						$('#row3Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -463,9 +463,9 @@ $(function() {
 				}
 			let checkLee2 = function () {
 				if ($('#row3Card5').is(':visible') && $('#row2Card3').is(':visible')) {
-						$('#row3Card5').delay(1000).fadeOut(1500);
+						$('#row3Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row2Card3').delay(1000).fadeOut(1500);
+						$('#row2Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}				
@@ -493,9 +493,9 @@ $(function() {
 				}
 			let checkKang1 = function () {
 				if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
-						$('#row2Card4').delay(1000).fadeOut(1500);
+						$('#row2Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row3Card6').delay(1000).fadeOut(1500);
+						$('#row3Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -522,9 +522,9 @@ $(function() {
 				}
 			let checkKang2 = function () {
 				if ($('#row3Card6').is(':visible') && $('#row2Card4').is(':visible')) {
-						$('#row3Card6').delay(1000).fadeOut(1500);
+						$('#row3Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row2Card4').delay(1000).fadeOut(1500);
+						$('#row2Card4').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column4Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -552,9 +552,9 @@ $(function() {
 				}
 			let checkCho1 = function () {
 				if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
-						$('#row2Card5').delay(1000).fadeOut(1500);
+						$('#row2Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row4Card5').delay(1000).fadeOut(1500);
+						$('#row4Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -581,9 +581,9 @@ $(function() {
 				}
 			let checkCho2 = function () {
 				if ($('#row4Card5').is(':visible') && $('#row2Card5').is(':visible')) {
-						$('#row4Card5').delay(1000).fadeOut(1500);
+						$('#row4Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row2Card5').delay(1000).fadeOut(1500);
+						$('#row2Card5').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column5Card2').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -611,9 +611,9 @@ $(function() {
 				}
 			let checkJeong1 = function () {
 				if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
-						$('#row4Card2').delay(1000).fadeOut(1500);
+						$('#row4Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row4Card6').delay(1000).fadeOut(1500);
+						$('#row4Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -640,9 +640,9 @@ $(function() {
 				}
 			let checkJeong2 = function () {
 				if ($('#row4Card6').is(':visible') && $('#row4Card2').is(':visible')) {
-						$('#row4Card6').delay(1000).fadeOut(1500);
+						$('#row4Card6').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column6Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row4Card2').delay(1000).fadeOut(1500);
+						$('#row4Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
@@ -670,9 +670,9 @@ $(function() {
 				}
 			let checkKim1 = function () {
 				if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
-						$('#row3Card1').delay(1000).fadeOut(1500);
+						$('#row3Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row4Card3').delay(1000).fadeOut(1500);
+						$('#row4Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 				}
 			}
@@ -699,9 +699,9 @@ $(function() {
 				}
 			let checkKim2 = function () {
 				if ($('#row4Card3').is(':visible') && $('#row3Card1').is(':visible')) {
-						$('#row4Card3').delay(1000).fadeOut(1500);
+						$('#row4Card3').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column3Card4').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#row3Card1').delay(1000).fadeOut(1500);
+						$('#row3Card1').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column1Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');			
 				}	
 			}
