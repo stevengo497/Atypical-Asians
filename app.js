@@ -1,6 +1,8 @@
 console.log('Up and running!');
 
-$(document).ready(function() {
+
+
+
 
 // Need to only allow 2 cards to play at the same time, CANNOT click until 2 unmatched cards are turned back around.
 // maybe if matched or unmatched, cannot use click function
@@ -14,11 +16,24 @@ $('#start').on('click', startCountdown);
 
 	let startCountdown = (function() {
 		
-		let i = 90;
-		setInterval(function(){
-			$('#box').html(i--)}, 1000)
-			$('#box').append([i--] + 'seconds')
+		let i = 2;
+		let timer = setInterval(function(){
+			i--;
+			$('#box').html(i);
+		if (i === 0 ) {
+			clearInterval(timer);
+			alert('time is up')
+		}
+
+		}, 1000);
 	})
+
+	//timer needs to stop when winner wins
+
+	//Need help - 1. how to stop click function if unmatch function is still going on and 
+	//2. How to get countdown to stop at 0 and pop alert
+	//3. Also need to get 'seconds' to be added to countdown clock (probably do the value and CSS the value properties to make the color and font match)
+
 
 
 // Jackie Chan //
@@ -614,7 +629,7 @@ $('#start').on('click', startCountdown);
 					alert('Congrats! You know your Asians!');
 				}
 	});
-});	
+
 
 
 
