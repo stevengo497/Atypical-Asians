@@ -44,26 +44,19 @@ span {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----- game html ----------*/
 
 li {
 	list-style-type: none;
-	padding: 0px;
+	font-family: 'Shojumaru', cursive;
+	color: #FFF35B;
+	font-size: 20px;
+	padding: 2px;
+}
+
+#list {
+	position: absolute;
+	margin-top: 5%;
 }
 
 #greenTea {
