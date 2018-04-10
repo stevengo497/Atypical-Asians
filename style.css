@@ -4,7 +4,7 @@
 	border: 7px solid #FFF35B;
 	background-color: #E5422E;
 	display: block;
-	margin-top: 350px;
+	margin-top: 7%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -31,7 +31,19 @@ span {
 	padding: 10px;
 	border-radius: 50%;
 	margin-top: 5%;
+	color: black;
 }
+
+#play:hover {
+	color: #E5422E;
+}
+
+#dragonRight {
+	position: absolute;
+	margin-left: 30%
+}
+
+
 
 
 
